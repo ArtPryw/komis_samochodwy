@@ -6,6 +6,7 @@ class Motocykl(Pojazdy):
         self.cena = cena
         self.silnik_typ = silnik_typ
         self.liczba_miejsc = liczba_miejsc
+        self.typ = "motocykl"
 
     def cena(self):
         return self.cena

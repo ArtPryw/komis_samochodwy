@@ -2,10 +2,10 @@ from osobowe import *
 
 class Ciezarowy(Osobowy):
 
-    def __init__(self,cena, max_paliwo, ladownosc):
+    def __init__(self,cena, max_paliwo, ladownosc, typ="ciezarowy"):
         self.ladownosc = ladownosc
         self.zaladowane = 0
-        super().__init__(cena, max_paliwo)
+        super().__init__(cena, max_paliwo, typ)
 
     def wlacz_silnik(self):
         print("Uruchamiam samochód ciężarowy")
