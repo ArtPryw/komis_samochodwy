@@ -66,24 +66,3 @@ class Komis:
             self.motocykle.pop(index_obj)
             return self.motocykle, self.budzet
 
-
-'''NAPISAĆ FUNKCJE Która wyswietli w liscie, ponumerowanej opis
-każdego auta w liscie. (lista podana jako parametr w funkcji)
-
-NAPISAĆ FUNKCJE KTÓRA wyświetli podsumowanie tzn. Wszystkie samochody
-z podziałem na typy i budzet komisu'''
-komis1 = Komis()
-
-print(komis1.osobowe)
-bmw_x3 = Osobowy(25000, 80)
-print(f"BMW {bmw_x3.typ}")
-ford_transit = Ciezarowy(5000,90,1500)
-fiat_ducato = Ciezarowy(15000,120,2000)
-print(f"transit {ford_transit.typ}")
-komis1.kup(bmw_x3)
-komis1.kup(ford_transit)
-komis1.kup(fiat_ducato)
-
-komis1.wyswiel_liste_samochodow("ciezarowe")
-komis1.podsumowanie()
-
